@@ -1,5 +1,15 @@
-import '@/styles/globals.css'
+// import "bootstrap/dist/css/bootstrap.min.scss";
+import "../styles/customTheme.scss";
+import "bootstrap-icons/font/bootstrap-icons.scss"
+import "../styles/globals.scss";
+import { useEffect } from "react";
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    require("bootstrap/dist/js/bootstrap.bundle.min.js");
+  }, []);
+
+  return <Component {...pageProps} />;
 }
+
+export default MyApp;
