@@ -1,7 +1,7 @@
 import styles from '../../styles/About.module.scss';
 import Titles from '../Titles'
 import Image from 'next/image';
-import Avatar from '@/public/photos/Avatar.jpg'
+import Avatar from '@/public/photos/avatar.jpg'
 function About() {
 
     const aboutAchievements = [
