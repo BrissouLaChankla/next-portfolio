@@ -11,14 +11,14 @@ function Works() {
     const [activeCategorie, setActiveCategorie] = useState(null);
 
     return (
-        <div className='container mt-section'>
+        <div id="works" className='container mt-section'>
             <Titles value="Dernières créations" />
 
             <div className="d-flex gap-4 fw-bold">
                 <button className={`btn btn-sm ${(null === activeCategorie) ? "btn-primary" : "btn-outline-primary"}`} onClick={() => setActiveCategorie(null)}>Tous</button>
                 {
-                    [...categories].map(categorie =>
-                        <button className={`btn btn-sm ${(categorie === activeCategorie) ? "btn-primary" : "btn-outline-primary"}`} onClick={() => setActiveCategorie(categorie)}>{categorie}</button>
+                    [...categories].map((categorie, i) =>
+                        <button key={i} className={`btn btn-sm ${(categorie === activeCategorie) ? "btn-primary" : "btn-outline-primary"}`} onClick={() => setActiveCategorie(categorie)}>{categorie}</button>
                     )
                 }
             </div>

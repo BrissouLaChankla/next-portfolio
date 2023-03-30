@@ -32,11 +32,11 @@ function Services() {
     ]
 
     return (
-        <div className='container mt-section'>
+        <div id="skills" className='container mt-section'>
             <Titles value="Compétences" />
             <div className="row">
                 {services.map((service,i) => 
-                    <div key={i} className="col-md-4">
+                    <div key={i} className="col-md-4 mt-4 mt-md-0">
                         <div style={{backgroundColor:service.bgColor}} className={`rounded-5 shadow text-center px-4 py-5 text-${service.color}`}>
                             <Image src={service.img} alt={service.title} />
                             <h2 className='fs-4 mt-4'>{service.title}</h2>
@@ -45,7 +45,7 @@ function Services() {
                     </div>
                     )}
             </div>
-            <p className="text-center mt-5">Looking for a custom job? Click here to contact me! 👋</p>
+            <p className="text-center mt-5">Vous cherchez votre prochain alternant Développeur Web ? <a href="mailto:exemple@exemple.com">Contactez-moi</a> 👋</p>
         </div>
     )
 }

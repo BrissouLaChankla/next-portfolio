@@ -10,12 +10,11 @@ function Navbar() {
                 </button>
                 <div className="collapse navbar-collapse " id="navbarNavAltMarkup">
                     <div className="navbar-nav ms-auto">
-                        <a className="nav-link ps-4 active" aria-current="page" href="#">Home</a>
-                        <a className="nav-link ps-4" href="#">About</a>
-                        <a className="nav-link ps-4" href="#">Services</a>
-                        <a className="nav-link ps-4" href="#">Experience</a>
-                        <a className="nav-link ps-4" href="#">Works</a>
-                        <a className="nav-link ps-4" href="#">Contact</a>
+                        <a className="nav-link ps-4" href="#about">A propos</a>
+                        <a className="nav-link ps-4" href="#skills">Compétences</a>
+                        <a className="nav-link ps-4" href="#experiences">Parcours</a>
+                        <a className="nav-link ps-4" href="#works">Projets</a>
+                        <a className="nav-link ps-4" href="#contact">Contact</a>
                     </div>
                 </div>
             </div>

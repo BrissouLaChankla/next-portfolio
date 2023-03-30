@@ -23,21 +23,23 @@ function Hero() {
             <div className="text-white text-center">
                 <Image src={Avatar} width={110} height={110} className='rounded-circle' />
                 <h1 className="mt-4">Brice Eliasse</h1>
-                <p>I'm a Web Developer</p>
-                <div className="d-flex justify-content-evenly fs-4">
-                    <a href="#" className="text-white">
+                <p>Développeur Web en recherche d'alternance !</p>
+                <div className="d-flex justify-content-center gap-4 fs-4">
+                    <a target="_blank" href="https://www.linkedin.com/in/brice-eliasse/" className="text-white">
                         <i className="bi bi-linkedin"></i>
                     </a>
-                    <a href="#" className="text-white">
+                    <a target="_blank" href="https://github.com/BrissouLaChankla" className="text-white">
                         <i className="bi bi-github"></i>
                     </a>
-                    <a href="#" className="text-white">
-                        <i class="bi bi-file-earmark-person-fill"></i>
+                    <a target="_blank" href="/CV_Brice-Eliasse.pdf" className="text-white">
+                        <i className="bi bi-file-earmark-person-fill"></i>
                     </a>
 
                 </div>
                 <div className="mt-4">
-                    <ThreeDButtons text="Me contacter"></ThreeDButtons>
+                    <a href="#contact">
+                        <ThreeDButtons text="Me contacter"></ThreeDButtons>
+                    </a>
                 </div>
             </div>
                 <a href="#" className={styles.lottieSection}>

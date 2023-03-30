@@ -13,7 +13,7 @@ function Form() {
 
     return (
         <form onSubmit={submit}>
-            <div class="mb-4">
+            <div className="mb-4">
                 <div className="row">
                 <div className="col-md-6">
                         <label htmlFor="name">Nom</label>
